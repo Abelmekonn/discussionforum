@@ -1,0 +1,8 @@
+.post-list .post{
+    width: 50%;
+    margin: auto;
+}
+.post h2 a{
+    color:#31728b !important;
+    text-decoration: none;
+}

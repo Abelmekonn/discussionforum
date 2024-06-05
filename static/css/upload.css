@@ -1,0 +1,38 @@
+
+a{
+    text-decoration: none;
+    color: black;
+    font-size: 25px;
+}
+h2{
+    text-align: center;
+}
+.upload{
+    width: 50%;
+    margin: auto;
+}
+label{
+    width: 70px;
+}
+.title .first{
+    width: 450px;
+}
+.content .my-custom-class{
+    width: 450px;
+    height: 200px;
+}
+.form-select{
+    width: 100px;
+}
+.form-file{
+    width: 450px;
+}
+.upload-btn{
+    width: 30%;
+    align-self: center;
+    margin-bottom: 40px;
+}
+.image label,
+.image input{
+    background-color: #FFFFFF;
+}

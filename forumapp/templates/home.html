@@ -1,0 +1,29 @@
+{% load static %}
+{% extends "base.html" %}
+    {% block content %}
+        <div class="container d-flex my-5">
+            {% for category in category %}
+                <div class="card container  mb-2 col-4">
+                <div class="image">
+                    <img src="{{ category.imageURL }}" alt="" style="width: 275px; height: 275px; ">
+                </div>
+                <div class="content">
+                    <a href="{% url 'posts_by_category' category.name %}">
+                        <span class="title">
+                            {{category.name|pluralize}}
+                        </span>
+                    </a>
+                    <p class="desc">
+                        {{category.description}}
+                    </p>
+                    <a class="action" href="{% url 'posts_by_category' category.name %}">
+                        Find out more
+                        <span aria-hidden="true">
+                            →
+                        </span>
+                    </a>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+    {% endblock content %}

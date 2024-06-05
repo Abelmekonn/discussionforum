@@ -1,0 +1,258 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    width: 100%;
+    font-family: 'Krub', sans-serif;
+    background-color: #F8F9FB;
+    transition: 2s all;
+}
+header{
+    background-color: #FFFFFF;
+    box-shadow: 0px 0.6px 0px 0px rgba(146, 144, 144, 0.58);
+}
+.tt-logo{
+    width: 40px;
+}
+.tt-logo a img{
+    width: 40px;
+    height: 40px;
+}
+.menu{
+    width: 450px;
+    margin-right: 50px;
+    margin-left: 20px;
+}
+.menu nav>ul>li.active>a span:before {
+    width: 100%;
+}
+.menu nav>ul>li>a span:before {
+    content: '';
+    display: block;
+    position: absolute;
+    bottom: -2px;
+    width: 0%;
+    height: 2px;
+    margin: auto;
+    left: 0;
+    right: 0;
+    z-index: 10;
+    background-color: #2172cd;
+    -webkit-transition: width .2s linear;
+    transition: width .2s linear;
+}
+.menu nav ul li a{
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 500;
+    color: rgb(24, 39, 48)
+}
+#page_dropdown{
+    display: none;
+    width: 200px;
+    background: white;
+    list-style: none;
+    position: absolute;
+    top: 74px;
+    left: 450px;
+}
+.pages:hover >#page_dropdown{
+    display: block;
+}
+.search-wrapper{
+    width: 340px;
+    height: 39px;
+    background-color: #E2E7EA;
+    border-radius: 5px;
+    margin-right: 100px;
+}
+.search-wrapper i,
+.search-wrapper2 i{
+    align-self: center;
+    padding-left: 10px;
+}
+.search-wrapper input{
+    align-self: center;
+    margin-left: 5px;
+    height: 39px;
+    width: 300px;
+    border: none;
+    background-color: #E2E7EA;
+    border-radius: 5px;
+}
+.search-wrapper input:focus-visible {
+    outline: none;
+}
+.tt-user{
+    width: 262px;
+    height: 40px;
+}
+.create-topic{
+    margin-right: 5px;
+}
+.create-topic i{
+    margin-top: 35px;
+    font-size: 42px;
+    align-self: center;
+    align-items: center;
+    color: #186d9e;
+}
+.cat-title{
+    box-shadow: 0px 0.6px 0px 0px rgba(146, 144, 144, 0.58);
+}
+.search-wrapper2 {
+    background-color: #E2E7EA;
+    padding: 0 10px;
+}
+.search-wrapper2 input{
+    height: 100%;
+    margin-left: 5px;
+    border: none;
+    background-color: #E2E7EA;
+}
+.search-wrapper2 input:focus-visible {
+    outline: none;
+}
+.card{
+    border: none;
+    width:400px;
+    height: 340px;
+}
+.card .tt-item{
+    height: 100%;
+}
+.card .tt-title a{
+    font-size: 14px;
+    font-weight: 400;
+    color: rgb(24, 39, 48);
+}
+.card .tt-list-badge-items{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+.tt-list-badge li a{
+    background-color: #2E3192;
+    text-decoration: none;
+    color: white;
+    padding: 5px 7px;
+    font-size: 14px;
+    font-weight: 500;
+    border-radius: 5px;
+}
+.tt-list-badge-items li a{
+    background-color: #D7DADC;
+    text-decoration: none;
+    color: rgb(27, 27, 27);
+    padding: 5px 9px;
+    font-size: 14px;
+    font-weight: 500;
+    border-radius: 5px;
+}
+.innerwrapper p{
+    color:rgb(102, 111, 116);
+    font-size: 16px;
+    font-weight: 400;
+}
+.tt-list-header{
+    color: rgb(48, 51, 68);
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.tt-col-topic{
+    width: 50%;
+}
+.tt-col-category{
+    width: 20%;
+}
+.tt-col-value{
+    width: 7.5%;
+}
+.tt-topic-alert{
+    background-color: #D1E4F9;
+    font-size: 16px;
+    font-weight: 400;
+    color: rgb(102, 111, 116);
+    border-left: 2px solid #2172cd;
+}
+.tt-topic-alert a{
+    color: rgb(24, 39, 48);
+}
+.tt-col-description{
+    width: 44%;
+}
+.tt-col-avatar{
+    width: 7%;
+    margin-right: 45px;
+}
+.tt-col-category span{
+    background-color: #2E3192;
+    padding: 4px 7px;
+    border-radius: 5px;
+    font-size: 14px;
+    font-weight: 500;
+    color: #FFFFFF;
+}
+.pt-edit-btn .btn-icon{
+    border: none;
+    background-color:#F8F9FB;
+}
+.tt-value-input{
+    position: absolute;
+    right: 150px;
+    margin-top: 8px;
+}
+.tt-wrapper-inner input{
+    border: none;
+    background-color: #E2E7EA;
+}
+.tt-wrapper-inner input:focus-visible {
+    outline: none;
+    background-color: #E2E7EA;
+}
+.create-btn:hover{
+    background-color: black;
+    
+}
+.tt-loginpages{
+    width: 40%;
+    margin: auto;
+    background-color: #FFFFFF;
+}
+.tt-loginpages .tt-block-title{
+    color: #0e0d0d;
+    text-decoration: none;
+}
+.tt-loginpages  .tt-title{
+    font-size: 17px;
+    font-weight: 600;
+    line-height: 26px;
+}
+.tt-loginpages .tt-block-title .tt-title:hover{
+    color: #4d9fc5;
+}
+.form-default input{
+    background-color: #E2E7EA;
+}
+.form-default input:focus{
+    background-color: #E2E7EA;
+}
+.tt-single-topic a{
+    text-decoration: none;
+    color: #302d2d;
+}
+.tt-single-topic h5 a:hover{
+    color: #2172cd;
+}
+.tt-single-topic p{
+    font-size: 14px;
+    color: rgb(102,111,116);
+}
+.tt-single-topic .tt-item-info .left a:hover{
+    color: #2172cd;
+}
+.tt-single-topic .tt-item-info .right a i:hover{
+    color: #2172cd;
+}
